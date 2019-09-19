@@ -24,6 +24,7 @@ $("#add-animal").on("click", function(event) {
 
 $("button").on("click", function() {
     var animal = $(this).attr("data-animal");
+    console.log(animal);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=q6mqgFplDJRCDJsdFupOB05a6VWXakpM&limit=10";
 
     $.ajax({
