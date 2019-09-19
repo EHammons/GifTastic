@@ -22,6 +22,17 @@ $("#add-animal").on("click", function(event) {
     $("#animal-input").val("");
 });
 
+$(document).on("click", ".gif", function() {
+    var state = $(this).attr("data-state");
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
+});
+
 $(document).on("click", "button", function() {
     var animal = $(this).attr("data-animal");
     console.log(animal);
@@ -34,6 +45,7 @@ $(document).on("click", "button", function() {
         .then(function(response) {
             console.log(response);
             var results = response.data;
+            $("#images").empty();
             for (var i = 0; i < results.length; i++) {
                 if (results[i].rating !== "r") {
                     var animalDiv = $("<div>");
@@ -44,8 +56,8 @@ $(document).on("click", "button", function() {
                     animalImg.attr("data-animate", results[i].images.fixed_height.url);
                     animalImg.attr("data-state", "still");
                     animalImg.addClass("gif");
-                    animalDiv.append(h);
                     animalDiv.append(animalImg);
+                    animalDiv.append(h);
                     $("#images").append(animalDiv);
                 }
             }
