@@ -1,4 +1,4 @@
-var animals = ["dog", "cat", "bird"];
+var animals = ["dog", "cat", "bird", "bear", "lion", "tiger", "fish", "monkey", "elephant", "wolf", "snake", "horse", "turtle", "deer", "dolphin", "panda"];
 
 function renderButtons() {
     $("#buttons-view").empty();
@@ -49,8 +49,9 @@ $(document).on("click", "button", function() {
             for (var i = 0; i < results.length; i++) {
                 if (results[i].rating !== "r") {
                     var animalDiv = $("<div>");
+                    animalDiv.addClass("gif-rating");
                     var animalImg = $("<img>");
-                    var h = $("<h4>").text("Rating: " + results[i].rating.toUpperCase());
+                    var h = $("<h5>").text("Rating: " + results[i].rating.toUpperCase());
                     animalImg.attr("src", results[i].images.fixed_height_still.url);
                     animalImg.attr("data-still", results[i].images.fixed_height_still.url);
                     animalImg.attr("data-animate", results[i].images.fixed_height.url);
