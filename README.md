@@ -1,4 +1,5 @@
 # GifTastic!
+Deployed at https://ehammons.github.io/GifTastic/
 > Find gifs of your favorite animals.
 
 ## Table of contents
