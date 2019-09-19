@@ -22,7 +22,7 @@ $("#add-animal").on("click", function(event) {
     $("#animal-input").val("");
 });
 
-$("button").on("click", function() {
+$(document).on("click", "button", function() {
     var animal = $(this).attr("data-animal");
     console.log(animal);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=q6mqgFplDJRCDJsdFupOB05a6VWXakpM&limit=10";
@@ -38,9 +38,13 @@ $("button").on("click", function() {
                 if (results[i].rating !== "r") {
                     var animalDiv = $("<div>");
                     var animalImg = $("<img>");
-                    var p = $("<p>").text("Rating: " + results[i].rating);
-                    animalImg.attr("src", results[i].images.fixed_height.url);
-                    animalDiv.append(p);
+                    var h = $("<h4>").text("Rating: " + results[i].rating.toUpperCase());
+                    animalImg.attr("src", results[i].images.fixed_height_still.url);
+                    animalImg.attr("data-still", results[i].images.fixed_height_still.url);
+                    animalImg.attr("data-animate", results[i].images.fixed_height.url);
+                    animalImg.attr("data-state", "still");
+                    animalImg.addClass("gif");
+                    animalDiv.append(h);
                     animalDiv.append(animalImg);
                     $("#images").append(animalDiv);
                 }
