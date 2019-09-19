@@ -1,0 +1,14 @@
+#animal-form {
+    float: right;
+}
+
+button {
+    background: green;
+    color: aliceblue;
+    margin: 2px;
+}
+
+#add-animal {
+    background: green;
+    color: aliceblue;
+}
