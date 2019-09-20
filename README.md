@@ -13,10 +13,10 @@ Deployed at https://ehammons.github.io/GifTastic/
 * [Contact](#contact)
 
 ## General info
-Add a new button to display new buttons for finding gifs or use one of the preprogrammed buttons to explore new gifs.
+Add a new button to display new topic for gifs or use one of the preprogrammed buttons to explore gifs. Click on a GIF to switch from animation to still and back.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Screenshot](./img/screenshot.png)
 
 ## Technologies
 * jQuery
@@ -24,27 +24,37 @@ Add a new button to display new buttons for finding gifs or use one of the prepr
 * GIPHY API
 
 ## Setup
-Describe how to install / setup your local environment / add link to demo version.
+Deployed at https://ehammons.github.io/GifTastic/
 
 ## Code Examples
-Show examples of usage:
-`put-your-code-here`
+`function renderButtons() {
+    $("#buttons-view").empty();
+
+    for (var i = 0; i < animals.length; i++) {
+        var animal = animals[i];
+        var button = $("<button>");
+        button.addClass("animal");
+        button.attr("data-animal", animal);
+        button.text(animal);
+        $("#buttons-view").append(button);
+    }
+};`
 
 ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Preprogrammed buttons for easy access to GIFs immediately
+* Add button feature to customize GIFs returned
+* Works with any added topic, not just animals.
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Create transparent box to hold GIFs so text doesn't blend with background
+* Improve responsiveness
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_ so it can go in my portfolio
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Inspired by Coding Boot Camp homework and love of simple outlines
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by Elise Hammons - feel free to contact me!
+<br>LinkedIn: https://www.linkedin.com/in/elise-h-01243258/
