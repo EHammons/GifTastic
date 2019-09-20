@@ -1,6 +1,6 @@
 # GifTastic!
 Deployed at https://ehammons.github.io/GifTastic/
-> Find gifs of your favorite animals.
+> Find gifs of your favorite animals or other user input topics.
 
 ## Table of contents
 * [General info](#general-info)
@@ -43,7 +43,7 @@ Deployed at https://ehammons.github.io/GifTastic/
 ## Features
 * Preprogrammed buttons for easy access to GIFs immediately
 * Add button feature to customize GIFs returned
-* Works with any added topic, not just animals.
+* Works with any added topic, not just animals
 
 To-do list:
 * Create transparent box to hold GIFs so text doesn't blend with background
