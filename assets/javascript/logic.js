@@ -1,4 +1,4 @@
-var animals = ["dog", "cat", "bird", "bear", "lion", "tiger", "fish", "monkey", "elephant", "wolf", "snake", "horse", "turtle", "deer", "dolphin", "panda"];
+var animals = ["dog", "cat", "bird", "bear", "lion", "tiger", "fish", "monkey", "elephant", "wolf", "snake", "horse", "turtle", "deer", "dolphin", "panda", "fox", "rabbit", "giraffe", "squirrel", "eagle", "rhinoceros", "bat", "otter", "crocodile", "gorilla"];
 
 function renderButtons() {
     $("#buttons-view").empty();
@@ -38,6 +38,7 @@ $(document).on("click", "button", function() {
     console.log(animal);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=q6mqgFplDJRCDJsdFupOB05a6VWXakpM&limit=10";
 
+
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -46,6 +47,8 @@ $(document).on("click", "button", function() {
             console.log(response);
             var results = response.data;
             $("#images").empty();
+            var instructions = $("<h3>").text("CLICK GIFs TO ANIMATE!");
+            $("#images").prepend(instructions);        
             for (var i = 0; i < results.length; i++) {
                 if (results[i].rating !== "r") {
                     var animalDiv = $("<div>");

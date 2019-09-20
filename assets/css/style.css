@@ -1,11 +1,33 @@
+body {
+    background-image: url(../images/backgroundlighter.jpg);
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #animal-form {
     float: right;
 }
 
-button {
+button, #add-animal {
     display: inline-block;
     padding: 2px 10px;
     cursor: pointer;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     outline: none;
@@ -17,26 +39,23 @@ button {
     margin: 3px;
 }
 
-button:hover {
+button:hover, #add-animal:hover {
     background-color: #3e8e41
 }
 
-button:active {
+button:active, #add-animal:active {
   background-color: #3e8e41;
   box-shadow: 3px 3px #666;
   transform: translateY(2px);
 }
 
 #add-text {
+    font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-#add-animal {
-    background: green;
-    color: aliceblue;
-}
 
 .gif-rating {
     float: left;
