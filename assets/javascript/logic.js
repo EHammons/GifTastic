@@ -1,4 +1,4 @@
-var animals = ["dog", "cat", "bird", "bear", "lion", "tiger", "fish", "monkey", "elephant", "wolf", "snake", "horse", "turtle", "deer", "dolphin", "panda", "fox", "rabbit", "giraffe", "squirrel", "eagle", "rhinoceros", "bat", "otter", "crocodile", "gorilla"];
+var animals = ["dog", "cat", "bird", "bear", "lion", "tiger", "fish", "monkey", "elephant", "wolf", "snake", "horse", "turtle", "deer", "dolphin", "panda", "fox", "rabbit", "giraffe", "squirrel", "eagle", "rhinoceros", "bat", "otter", "crocodile", "gorilla", "pig"];
 
 function renderButtons() {
     $("#buttons-view").empty();

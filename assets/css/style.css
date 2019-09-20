@@ -19,6 +19,10 @@ h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2, h3, h5, #add-text {
+    color: darkgreen
+}
+
 #animal-form {
     float: right;
 }
