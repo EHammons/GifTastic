@@ -34,7 +34,7 @@ button, #add-animal {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    outline: none;
+    outline: none !important;
     color: #fff;
     background-color: #4CAF50;
     border: none;
