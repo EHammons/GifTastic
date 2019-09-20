@@ -27,18 +27,18 @@ Add a new button to display new topic for gifs or use one of the preprogrammed b
 Deployed at https://ehammons.github.io/GifTastic/
 
 ## Code Examples
-`function renderButtons() {
-    $("#buttons-view").empty();
+    function renderButtons() {
+        $("#buttons-view").empty();
 
-    for (var i = 0; i < animals.length; i++) {
-        var animal = animals[i];
-        var button = $("<button>");
-        button.addClass("animal");
-        button.attr("data-animal", animal);
-        button.text(animal);
-        $("#buttons-view").append(button);
-    }
-};`
+        for (var i = 0; i < animals.length; i++) {
+            var animal = animals[i];
+            var button = $("<button>");
+            button.addClass("animal");
+            button.attr("data-animal", animal);
+            button.text(animal);
+            $("#buttons-view").append(button);
+        }
+    };
 
 ## Features
 * Preprogrammed buttons for easy access to GIFs immediately
