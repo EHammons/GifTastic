@@ -1,12 +1,12 @@
 # GifTastic!
-Deployed at https://ehammons.github.io/GifTastic/
 > Find gifs of your favorite animals or other user input topics.
+## Deployed App
+https://ehammons.github.io/GifTastic/
 
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -23,9 +23,6 @@ Add a new button to display new topic for gifs or use one of the preprogrammed b
 * JavaScript
 * GIPHY API
 
-## Setup
-Deployed at https://ehammons.github.io/GifTastic/
-
 ## Code Examples
     function renderButtons() {
         $("#buttons-view").empty();
@@ -41,20 +38,22 @@ Deployed at https://ehammons.github.io/GifTastic/
     };
 
 ## Features
+List of features ready and TODOs for future development:
+### Features
 * Preprogrammed buttons for easy access to GIFs immediately
 * Add button feature to customize GIFs returned
 * Works with any added topic, not just animals
-
-To-do list:
+### Future Development
 * Create transparent box to hold GIFs so text doesn't blend with background
 * Improve responsiveness
 
 ## Status
-Project is: _in progress_ so it can go in my portfolio
+Project is: _finished_
 
 ## Inspiration
-Inspired by Coding Boot Camp homework and love of simple outlines
+Inspired by a love of animals and simple outlines.
+Based on the GifTastic assignment for The Coding Bootcamp at UT Austin.
 
 ## Contact
 Created by Elise Hammons - feel free to contact me!
-<br>LinkedIn: https://www.linkedin.com/in/elise-h-01243258/
+<br>[LinkedIn](https://www.linkedin.com/in/elise-h-01243258/)
