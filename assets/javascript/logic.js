@@ -47,7 +47,7 @@ $(document).on("click", "button", function() {
             console.log(response);
             var results = response.data;
             $("#images").empty();
-            var instructions = $("<h3>").text("CLICK GIFs TO ANIMATE!");
+            var instructions = $("<h3>").text("CLICK ON GIFs TO ANIMATE OR STOP!");
             $("#images").prepend(instructions);        
             for (var i = 0; i < results.length; i++) {
                 if (results[i].rating !== "r") {
